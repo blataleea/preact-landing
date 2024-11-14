@@ -1,0 +1,41 @@
+/*глобальные стили */
+#app {
+  max-width: 100wv;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 
+#root {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.app-section {
+  scroll-snap-align: start;     
+  height: 100vh;                
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ */
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

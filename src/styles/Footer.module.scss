@@ -1,0 +1,54 @@
+@use './variables' as *;
+
+.footer {
+  background-color: $color-footer;
+  color: $color-primary-text;
+  padding: 1rem 0;
+  font-family: $font-family-main;
+  block-size: 100px;
+  inline-size: 100vw;
+
+  &__container {
+    max-width: 1280px;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block-start: 40px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    margin-right: 0.5rem;
+  }
+
+  &__company_name {
+    font-weight: $font-weight-bold;
+    color: $color-heading;
+  }
+
+  &__copyrighting {
+    text-align: center;
+    font-size: $font-size-base;
+    color: $color-border;
+  }
+
+  &__contacts {
+    text-align: right;
+
+    p {
+      margin: 0;
+      color: $color-heading;
+      font-size: 0.875rem;
+    }
+  }
+
+  &__contacts p:hover {
+    color: $color-hover;
+  }
+}

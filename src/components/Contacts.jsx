@@ -13,11 +13,11 @@ const Contacts = () => {
 
   return (
     <div id="contacts" className={styles.contacts}>
-      <section className={styles.section}>
+      <section className={styles.contacts__section}>
         <h2 className={styles.contacts__title}>Контакты</h2>
-        <p className={styles.contacts__description}>
+        {/* <p className={styles.contacts__description}>
           Мы всегда рады ответить на ваши вопросы.
-        </p>
+        </p> */}
         <div className={styles.contacts__container}>
           <div className={styles.contacts__details}>
             <p className={styles.contacts__info}>
@@ -34,12 +34,14 @@ const Contacts = () => {
               </a>
             </p>
           </div>
+          </div>
           {/* место для яндекс карт */}
-          <YMaps query={{apikey: '27170493-9c31-493f-8e84-18092df6062f'}}>
+          <YMaps  query={{apikey: '27170493-9c31-493f-8e84-18092df6062f'}}>
             <Map
+            className={styles.contacts__map}
             defaultState={mapState}
-            width='100%'
-            height='400px'
+            // width='575px'
+            // height='475px'
             >
               <Placemark
               geometry={[55.744475, 37.707619]}
@@ -50,7 +52,6 @@ const Contacts = () => {
               />
             </Map>
           </YMaps>
-        </div>
       </section>
     </div>
   );

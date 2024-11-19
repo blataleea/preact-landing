@@ -12,7 +12,7 @@ const Footer = () => {
           ООО ХАРД ФМ. ВСЕ ПРАВА ЗАЩИЩЕНЫ
         </div>
         <div className={styles.footer__contacts}>
-          <p>Email: info@company.com</p>
+          <p>Email: info_hfm@mail.ru</p>
           <p>Tel: +7 (925)-275-2555</p>
         </div>
       </div>

@@ -12,6 +12,7 @@
     "normalize.css": "^8.0.1",
     "preact": "^10.24.3",
     "preact-router": "^4.1.2",
+    "react-yandex-map": "^4.6.0",
     "sass": "^1.80.7"
   },
   "devDependencies": {

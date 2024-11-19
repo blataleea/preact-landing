@@ -15,16 +15,16 @@ const About = () => {
       </p>
       <div className={styles.about__content}>
         <div className={styles.about__section}>
-          <h3 className={styles.about__section_title}>Наша миссия</h3>
-          <p className={styles.about__section_text}>
+          <h3 className={styles.about__section__title}>Наша миссия</h3>
+          <p className={styles.about__section__text}>
             Избежать незапланированных поломок, простоев и поддерживать высокий
             уровень обслуживания. Управление услугами по техническому обслуживанию
             зданий.
           </p>
         </div>
         <div className={styles.about__section}>
-          <h3 className={styles.about__section_title}>Мы работаем</h3>
-          <p className={styles.about__section_text}>
+          <h3 className={styles.about__section__title}>Мы работаем</h3>
+          <p className={styles.about__section__text}>
             На объектах социально-культурного назначения, торгово-развлекательных
             центрах, офисных зданиях и помещениях. Выполняем оценку качества/экспертизу
             смр, общестроительных работ и инженерных систем, экспертизу и выявление

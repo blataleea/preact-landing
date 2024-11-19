@@ -1,0 +1,61 @@
+@use './variables' as *;
+
+.team {
+  height: 100vh;
+
+  //change width for adaptive
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  // grid-template-rows: auto 0,5fr;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $font-family-main;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding-block-end: 30px;
+  }
+
+  &__section {
+    display: flex;
+    gap: 40px;
+
+    &:nth-child(even) {
+      justify-content: flex-start;
+      flex-direction: row;
+      
+      .team__section_description {
+        text-align: left;
+      }
+    }
+
+    &:nth-child(odd) {
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      
+      .team__section_description {
+        text-align: right;
+      }
+    }
+    
+    &_img {
+      block-size: 300px;
+      inline-size: 290px;
+    }
+
+    
+    &_description {
+      font-family: $font-family-main;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      line-height: 40px;
+    }
+   }
+  }

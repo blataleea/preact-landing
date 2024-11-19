@@ -1,7 +1,16 @@
 import { h } from 'preact';
 import styles from '../styles/Contacts.module.scss';
+import { YMaps, Map, Placemark } from 'react-yandex-map';
 
 const Contacts = () => {
+
+  const mapState = {
+    center: [55.744475, 37.707619],
+    zoom: 16,
+  };
+
+
+
   return (
     <div id="contacts" className={styles.contacts}>
       <section className={styles.section}>
@@ -24,9 +33,23 @@ const Contacts = () => {
                 Адрес: г. Москва, ул. Душинская, д. 7, стр. 3, офис 11
               </a>
             </p>
-            
           </div>
-          <img src="src\assets\images\map.jpg" loading='lazy' className={styles.img}/>
+          {/* место для яндекс карт */}
+          <YMaps query={{apikey: '27170493-9c31-493f-8e84-18092df6062f'}}>
+            <Map
+            defaultState={mapState}
+            width='100%'
+            height='400px'
+            >
+              <Placemark
+              geometry={[55.744475, 37.707619]}
+              properties={{
+                hintContent: 'Наш офис',
+                balloonContent: 'г. Москва, ул. Душинская, д. 7, стр. 3, офис 11'
+              }}
+              />
+            </Map>
+          </YMaps>
         </div>
       </section>
     </div>

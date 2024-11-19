@@ -5,12 +5,13 @@
   text-align: center;
 }
 
-/* 
+
 #root {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
+/*
 .app-section {
   scroll-snap-align: start;     
   height: 100vh;                

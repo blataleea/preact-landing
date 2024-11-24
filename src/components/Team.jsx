@@ -8,20 +8,26 @@ const Team = () => {
         Команда
       </h2>
       <section className={styles.team__section}>
-        <img className={styles.team__section_img} src='https://jf-staeulalia.pt/img/other/85/collection-laptop-computers-pictures-12.png' alt='фотография человека'/>
-        <h3 className={styles.team__section_description}>
+        <img className={styles.team__section_img} src='src\assets\images\photo_demo.png'/>
+        <div className={styles.team__section_description}>
+        <h3 className={styles.team__section_description_name}>
           Можаев Виктор
-          <br/>
+          </h3>
+        <p className={styles.team__section_description_job}>
           Генеральный директор
-        </h3>
+        </p>
+        </div>
       </section>
       <section className={styles.team__section}>
-        <img className={styles.team__section_img} src='https://jf-staeulalia.pt/img/other/85/collection-laptop-computers-pictures-12.png' alt='фотография человека'/>
-        <h3 className={styles.team__section_description}>
-          Имя
-          <br/>
+        <img className={styles.team__section_img} src='src\assets\images\photo_demo.png' alt='фотография человека'/>
+        <div className={styles.team__section_description}>
+        <h3 className={styles.team__section_description_name}>
+          Фамилия Имя
+          </h3>
+        <p className={styles.team__section_description_job}>
           Должность
-        </h3>
+        </p>
+        </div>
       </section>
     </container>
   );

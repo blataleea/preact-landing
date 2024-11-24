@@ -15,9 +15,6 @@ const Contacts = () => {
     <div id="contacts" className={styles.contacts}>
       <section className={styles.contacts__section}>
         <h2 className={styles.contacts__title}>Контакты</h2>
-        {/* <p className={styles.contacts__description}>
-          Мы всегда рады ответить на ваши вопросы.
-        </p> */}
         <div className={styles.contacts__container}>
           <div className={styles.contacts__details}>
             <p className={styles.contacts__info}>
@@ -40,8 +37,6 @@ const Contacts = () => {
             <Map
             className={styles.contacts__map}
             defaultState={mapState}
-            // width='575px'
-            // height='475px'
             >
               <Placemark
               geometry={[55.744475, 37.707619]}

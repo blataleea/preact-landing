@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .team {
   height: 100vh;
@@ -19,6 +19,13 @@
     text-align: center;
     margin: 0;
     padding-block-end: 30px;
+    font-weight: 800;
+
+    // background: linear-gradient(90deg, rgba(7,23,57,1) 11%, rgba(45,60,80,1) 45%, rgba(7,23,57,1) 87%);
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
   }
 
   &__section {
@@ -28,7 +35,7 @@
     &:nth-child(even) {
       justify-content: flex-start;
       flex-direction: row;
-      
+
       .team__section_description {
         text-align: left;
       }
@@ -37,25 +44,33 @@
     &:nth-child(odd) {
       justify-content: flex-start;
       flex-direction: row-reverse;
-      
+
       .team__section_description {
         text-align: right;
       }
     }
-    
+
     &_img {
       block-size: 300px;
       inline-size: 290px;
     }
 
-    
     &_description {
-      font-family: $font-family-main;
-      font-size: 24px;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       flex-wrap: nowrap;
-      line-height: 40px;
+      justify-content: center;
+
+      &_name {
+        font-size: 26px;
+        color: $color-primary-text;
+      }
+
+      &_job {
+        font-size: 20px;
+        font-style: italic;
+        color: $color-heading;
+      }
     }
-   }
   }
+}

@@ -38,13 +38,13 @@
   }
 
   &__title {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 66px;
+    font-weight: 800;
     margin-bottom: 20px;
   }
 
   &__logo_img {
-    width: 150px;
+    width: 350px;
     height: auto;
   }
 
@@ -62,7 +62,6 @@
 
   &__nav_item {
     display: inline-block;
-    font-size: 24px;
   }
 
   .link {
@@ -71,10 +70,11 @@
     border: none;
     color: white;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 34px;
     transition: color 0.3s;
+    font-weight: 800;
   
-    &:hover {
+    &:hover, &.active {
       color: $color-hover;
     }
   
@@ -89,7 +89,7 @@
       transition: width 0.3s;
     }
   
-    &:hover::after {
+    &:hover::after, &.active::after {
       width: 100%;
     }
   }

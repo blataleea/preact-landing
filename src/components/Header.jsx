@@ -1,6 +1,7 @@
 import { h } from "preact";
 import styles from "../styles/Header.module.scss";
 import { useEffect, useState } from 'preact/hooks';
+import logoFill from '../../public/logofill_header.svg';
 
 const Header = () => {
 
@@ -59,7 +60,7 @@ const Header = () => {
           </h1>
           <div className={styles.header__logo}>
             <img
-              src="public/logofill_header.svg"
+              src={logoFill}
               alt="Логотип компании"
               className={styles.header__logo_img}
             />

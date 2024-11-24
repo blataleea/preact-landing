@@ -5,6 +5,7 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   base: '/preact-landing/',
   build: {
+    assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpeg'],
     outDir: 'docs',
   },
   server: {

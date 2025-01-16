@@ -4,7 +4,7 @@ import photoDemo from '../assets/images/photo_demo.png';
 
 const Team = () => {
   return (
-    <container id="team" className={styles.team}>
+    <section id="team" className={styles.team}>
       <h2 className={styles.team__title}>Команда</h2>
       <section className={styles.team__section}>
         <img
@@ -32,7 +32,7 @@ const Team = () => {
           <p className={styles.team__section_description_job}>Должность</p>
         </div>
       </section>
-    </container>
+    </section>
   );
 };
 

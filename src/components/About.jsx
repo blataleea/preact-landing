@@ -1,9 +1,10 @@
 import { h } from 'preact';
 import styles from '../styles/About.module.scss';
+import buildingsImg from '../assets/images/buildings_1.jpg';
 
 const About = () => {
   return (
-    <div id="about" className={styles.about}>
+    <section id="about" className={styles.about}>
       <h2 className={styles.about__title}>Добро пожаловать в Hard FM</h2>
       <p className={styles.about__intro}>
         Hard Facility Management — это управление недвижимостью, инженерной
@@ -22,6 +23,7 @@ const About = () => {
             зданий.
           </p>
         </div>
+        {/* <img className={styles.about__section__img} src={buildingsImg} /> */}
         <div className={styles.about__section}>
           <h3 className={styles.about__section__title}>Мы работаем</h3>
           <p className={styles.about__section__text}>
@@ -33,7 +35,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

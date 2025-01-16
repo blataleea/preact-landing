@@ -30,7 +30,7 @@
     font-size: 36px;
     color: $color-primary-text;
     margin-bottom: 20px;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-extra-bold;
     margin-left: 10px;
     font-family: $font-family-main;
   }
@@ -68,8 +68,9 @@
     font-size: 24px;
     font-weight: 600;
     color: $color-primary-text; 
-    text-decoration: underline;
+    // text-decoration: underline;
     margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
   &__phone,

@@ -1,15 +1,21 @@
 import { h } from "preact";
 import styles from "../styles/Header.module.scss";
-import { useEffect, useState } from 'preact/hooks';
-import logoFill from '../../public/logofill_header.svg';
+import { useEffect, useState } from "preact/hooks";
+import logoFill from "../../public/logofill_header.svg";
 
 const Header = () => {
-
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const sections = ['about', 'team', 'projects', 'contacts'];
-    const sectionElements = sections.map((id) => document.getElementById(id));
+    const sections = ["about", "team", "projects", "documents", "contacts"];
+
+    console.log('section', sections);
+
+    const sectionElements = sections.map((id) => {
+      const element = document.getElementById(id);
+      console.log(`Section ${id}:`, element);
+      return element;
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -20,7 +26,7 @@ const Header = () => {
         });
       },
       {
-        threshold: 0.6, 
+        threshold: 0.6,
       }
     );
 
@@ -30,7 +36,6 @@ const Header = () => {
       }
     });
 
-    
     return () => {
       sectionElements.forEach((section) => {
         if (section) {
@@ -39,13 +44,13 @@ const Header = () => {
       });
     };
   }, []);
-  
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -55,9 +60,7 @@ const Header = () => {
       <div className={styles.header__container}>
         <div className={styles.header__background}></div>
         <div className={styles.header__content}>
-          <h1 className={styles.header__title}>
-            Hard Facility Manager
-          </h1>
+          <h1 className={styles.header__title}>Hard Facility Manager</h1>
           <div className={styles.header__logo}>
             <img
               src={logoFill}
@@ -69,32 +72,50 @@ const Header = () => {
             <ul className={styles.header__nav_list}>
               <li className={styles.header__nav_item}>
                 <button
-                  className={`${styles.link} ${activeSection === 'about' ? styles.active : ''}`}
-                  onClick={() => scrollToSection('about')}
+                  className={`${styles.link} ${
+                    activeSection === "about" ? styles.active : ""
+                  }`}
+                  onClick={() => scrollToSection("about")}
                 >
                   О нас
                 </button>
               </li>
               <li className={styles.header__nav_item}>
                 <button
-                  className={`${styles.link} ${activeSection === 'team' ? styles.active : ''}`}
-                  onClick={() => scrollToSection('team')}
+                  className={`${styles.link} ${
+                    activeSection === "team" ? styles.active : ""
+                  }`}
+                  onClick={() => scrollToSection("team")}
                 >
                   Команда
                 </button>
               </li>
               <li className={styles.header__nav_item}>
                 <button
-                  className={`${styles.link} ${activeSection === 'projects' ? styles.active : ''}`}
-                  onClick={() => scrollToSection('projects')}
+                  className={`${styles.link} ${
+                    activeSection === "projects" ? styles.active : ""
+                  }`}
+                  onClick={() => scrollToSection("projects")}
                 >
                   Проекты
                 </button>
               </li>
               <li className={styles.header__nav_item}>
                 <button
-                  className={`${styles.link} ${activeSection === 'contacts' ? styles.active : ''}`}
-                  onClick={() => scrollToSection('contacts')}
+                  className={`${styles.link} ${
+                    activeSection === "documents" ? styles.active : ""
+                  }`}
+                  onClick={() => scrollToSection("documents")}
+                >
+                  Документы
+                </button>
+              </li>
+              <li className={styles.header__nav_item}>
+                <button
+                  className={`${styles.link} ${
+                    activeSection === "contacts" ? styles.active : ""
+                  }`}
+                  onClick={() => scrollToSection("contacts")}
                 >
                   Контакты
                 </button>
@@ -104,37 +125,54 @@ const Header = () => {
         </div>
       </div>
 
-      
       <nav className={styles.fixedNav}>
         <ul className={styles.fixedNav__list}>
           <li className={styles.fixedNav__item}>
             <button
-              className={`${styles.link} ${activeSection === 'about' ? styles.active : ''}`}
-              onClick={() => scrollToSection('about')}
+              className={`${styles.link} ${
+                activeSection === "about" ? styles.active : ""
+              }`}
+              onClick={() => scrollToSection("about")}
             >
               О нас
             </button>
           </li>
           <li className={styles.fixedNav__item}>
             <button
-              className={`${styles.link} ${activeSection === 'team' ? styles.active : ''}`}
-              onClick={() => scrollToSection('team')}
+              className={`${styles.link} ${
+                activeSection === "team" ? styles.active : ""
+              }`}
+              onClick={() => scrollToSection("team")}
             >
               Команда
             </button>
           </li>
           <li className={styles.fixedNav__item}>
             <button
-              className={`${styles.link} ${activeSection === 'projects' ? styles.active : ''}`}
-              onClick={() => scrollToSection('projects')}
+              className={`${styles.link} ${
+                activeSection === "projects" ? styles.active : ""
+              }`}
+              onClick={() => scrollToSection("projects")}
             >
               Проекты
             </button>
           </li>
           <li className={styles.fixedNav__item}>
             <button
-              className={`${styles.link} ${activeSection === 'contacts' ? styles.active : ''}`}
-              onClick={() => scrollToSection('contacts')}
+              className={`${styles.link} ${
+                activeSection === "documents" ? styles.active : ""
+              }`}
+              onClick={() => scrollToSection("documents")}
+            >
+              Документы
+            </button>
+          </li>
+          <li className={styles.fixedNav__item}>
+            <button
+              className={`${styles.link} ${
+                activeSection === "contacts" ? styles.active : ""
+              }`}
+              onClick={() => scrollToSection("contacts")}
             >
               Контакты
             </button>

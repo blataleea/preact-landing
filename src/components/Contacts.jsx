@@ -12,7 +12,7 @@ const Contacts = () => {
 
 
   return (
-    <div id="contacts" className={styles.contacts}>
+    <section id="contacts" className={styles.contacts}>
       <section className={styles.contacts__section}>
         <h2 className={styles.contacts__title}>Контакты</h2>
         <div className={styles.contacts__container}>
@@ -48,7 +48,7 @@ const Contacts = () => {
             </Map>
           </YMaps>
       </section>
-    </div>
+    </section>
   );
 }
 

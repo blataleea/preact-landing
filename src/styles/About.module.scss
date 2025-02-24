@@ -1,8 +1,6 @@
 @use './variables' as *;
 
 .about {
-  height: 100vh;
-  max-width: 1200px;
   margin: 0 auto;
   font-family: $font-family-main;
   display: flex;

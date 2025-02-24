@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <section id="team" className={styles.team}>
       <h2 className={styles.team__title}>Команда</h2>
-      <section className={styles.team__section}>
+      <article className={styles.team__section}>
         <img
           className={styles.team__section_img}
           src={photoDemo}
@@ -20,8 +20,8 @@ const Team = () => {
             Генеральный директор
           </p>
         </div>
-      </section>
-      <section className={styles.team__section}>
+      </article>
+      <article className={styles.team__section}>
         <img
           className={styles.team__section_img}
           src={photoDemo}
@@ -31,7 +31,7 @@ const Team = () => {
           <h3 className={styles.team__section_description_name}>Фамилия Имя</h3>
           <p className={styles.team__section_description_job}>Должность</p>
         </div>
-      </section>
+      </article>
     </section>
   );
 };

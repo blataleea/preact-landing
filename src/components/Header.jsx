@@ -7,7 +7,9 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const sections = ["about", "team", "projects", "documents", "contacts"];
+    // const sections = ["about", "team", "projects", "documents", "contacts"];
+    const sections = ["about", "team", "documents", "contacts"];
+
 
     console.log('section', sections);
 
@@ -90,7 +92,7 @@ const Header = () => {
                   Команда
                 </button>
               </li>
-              <li className={styles.header__nav_item}>
+              {/* <li className={styles.header__nav_item}>
                 <button
                   className={`${styles.link} ${
                     activeSection === "projects" ? styles.active : ""
@@ -99,7 +101,7 @@ const Header = () => {
                 >
                   Проекты
                 </button>
-              </li>
+              </li> */}
               <li className={styles.header__nav_item}>
                 <button
                   className={`${styles.link} ${
@@ -146,8 +148,8 @@ const Header = () => {
             >
               Команда
             </button>
-          </li>
-          <li className={styles.fixedNav__item}>
+          </li> 
+          {/* <li className={styles.fixedNav__item}>
             <button
               className={`${styles.link} ${
                 activeSection === "projects" ? styles.active : ""
@@ -156,7 +158,7 @@ const Header = () => {
             >
               Проекты
             </button>
-          </li>
+          </li> */}
           <li className={styles.fixedNav__item}>
             <button
               className={`${styles.link} ${

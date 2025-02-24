@@ -8,7 +8,7 @@ import page_4 from "../assets/images/page_4.jpg";
 const Documents = () => {
   return (
     <section id="documents" className={styles.documents}>
-      <section className={styles.documents__section}>
+      <article className={styles.documents__section}>
         <h2 className={styles.documents__section__title}>Документы</h2>
         <div className={styles.documents__section__content}>
           <div className={styles.documents__section__content__images}>
@@ -43,7 +43,7 @@ const Documents = () => {
             <span className={styles.documents__section__content__description__span}> Нострой</span>.
           </p>
         </div>
-      </section>
+      </article>
     </section>
   );
 };

@@ -16,7 +16,7 @@
     align-items: center;
     height: 100%;
     color: $color-light-gray;
-    z-index: 2;
+    z-index: 5;
   }
 
   &__background {
@@ -29,16 +29,16 @@
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.8)
     ), url('/src/assets/images/header_background_2.jpg') center/cover no-repeat;
-    z-index: 1;
+    z-index: 5;
   }
 
   &__content {
-    z-index: 2;
+    z-index: 6;
     text-align: center;
   }
 
   &__title {
-    font-size: 66px;
+    font-size: $font-size-h1;
     font-weight: 800;
     margin-bottom: 20px;
   }
@@ -100,13 +100,13 @@
   top: 0;
   width: 100%;
   background-color: rgba(7, 23, 57, 0.9);
-  padding: 10px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 0;
+  z-index: 4;
 
   &__list {
     list-style: none;
     padding: 0;
+    margin: 10px;
     display: flex;
     gap: 90px;
     justify-content: center;

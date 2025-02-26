@@ -35,10 +35,10 @@ const Documents = () => {
           </div>
           <p className={styles.documents__section__content__description}>
           <span className={styles.documents__section__content__description__span}>ООО Хард ФМ </span>является членом <span className={styles.documents__section__content__description__span}>саморегулируемой организации</span> Союз
-            Строителей в г. Москве, что подтверждает - деятельность компании в
-            части управления и обслуживания недвижимости, - предоставление
+            Строителей в г. Москве, что подтверждает&nbsp;-&nbsp;деятельность компании в
+            части управления и обслуживания недвижимости,&nbsp;-&nbsp;предоставление
             компанией широкого спектра услуг <span className={styles.documents__section__content__description__span}>в области строительства,
-            реконструкции, капитального ремонта</span> - наличие компетентной команды,
+            реконструкции, капитального ремонта</span>&nbsp;-&nbsp;наличие компетентной команды,
             специалисты которой включены в Национальный реестр специалистов 
             <span className={styles.documents__section__content__description__span}> Нострой</span>.
           </p>

@@ -21,6 +21,7 @@ const Contacts = () => {
               <span className={styles.contacts__name}>Можаев Виктор</span>
               Должность: Генеральный директор
               <a href="tel:+79252752555" className={styles.contacts__phone}>Телефон: +7 (925) 275-2555</a>
+              <a href="mailto:info_hfm@mail.ru" className={styles.contacts__phone}>Email: info_hfm@mail.ru</a>
               <a 
                 href="https://yandex.ru/maps/?text=г. Москва, ул. Душинская, д. 7, стр. 3, офис 11" 
                 target="_blank" 
